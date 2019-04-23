@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <!-- Configuração do c3p0 -->
+        
+        <!-- Configurações de debug -->
+        <mapping class="modelo.Agendamento"/>
+        <mapping class="modelo.AgendamentoEquipamento"/>
+        <mapping class="modelo.AgendamentoEquipamentoItens"/>
+        <mapping class="modelo.AgendamentoOficio"/>
+        <mapping class="modelo.Aluno"/>
+        <mapping class="modelo.Ata"/>
+        <mapping class="modelo.Bloco"/>
+        <mapping class="modelo.Cartucho"/>
+        <mapping class="modelo.Cmei"/>
+        <mapping class="modelo.ContraSenha"/>
+        <mapping class="modelo.Crachas"/>
+        <mapping class="modelo.CrachasCme"/>
+        <mapping class="modelo.CrachasComae"/>
+        <mapping class="modelo.DepartamentoDivisaoSetor"/>
+        <mapping class="modelo.Edital"/>
+        <mapping class="modelo.Endereco"/>
+        <mapping class="modelo.EntregaRemanufaturados"/>
+        <mapping class="modelo.EntregaRemanufaturadosItens"/>
+        <mapping class="modelo.Equipamento"/>
+        <mapping class="modelo.EquipamentoEntidades"/>
+        <mapping class="modelo.Escola"/>
+        <mapping class="modelo.Justificativa"/>
+        <mapping class="modelo.InstrucaoNormativa"/>
+        <mapping class="modelo.Linha"/>
+        <mapping class="modelo.Log2"/>
+        <mapping class="modelo.Lote"/>
+        <mapping class="modelo.ModeloCartucho"/>
+        <mapping class="modelo.Oficio"/>
+        <mapping class="modelo.Outro"/>
+        <mapping class="modelo.Permissoes"/>
+        <mapping class="modelo.PontoDigital"/>
+        <mapping class="modelo.Portaria"/>
+        <mapping class="modelo.Recarga"/>
+        <mapping class="modelo.Resolucao"/>
+        <mapping class="modelo.SolicitacaoRecarga"/>
+        <mapping class="modelo.SolicitacaoRemanufatura"/>
+        <mapping class="modelo.SolicitacaoRemanufaturaItens"/>
+        <mapping class="modelo.TipoEquipamento"/>
+        <mapping class="modelo.Usuario"/>
+        <mapping class="modelo.VersaoAtual"/>
+        <mapping class="modelo.VersaoUsuario"/>
+        
+        <!--mapping resource="Agendamento.hbm.xml"/>
+        <mapping resource="AgendamentoEquipamento.hbm.xml"/>
+        <mapping resource="Aluno.hbm.xml"/>
+        <mapping resource="Cartucho.hbm.xml"/>
+        <mapping resource="Cmei.hbm.xml"/>
+        <mapping resource="Contrasenha.hbm.xml"/>
+        <mapping resource="Edital.hbm.xml"/>
+        <mapping resource="Equipamento.hbm.xml"/>
+        <mapping resource="EquipamentoEntidades.xml"/>
+        <mapping resource="Escola.hbm.xml"/>
+        <mapping resource="ModeloCartucho.hbm.xml"/>
+        <mapping resource="Oficio.hbm.xml"/>
+        <mapping resource="Outro.hbm.xml"/>
+        <mapping resource="Permissoes.hbm.xml"/>
+        <mapping resource="PontoDigital.hbm.xml"/>
+        <mapping resource="Portaria.hbm.xml"/>
+        <mapping resource="Recarga.hbm.xml"/>
+        <mapping resource="Resolucao.hbm.xml"/>
+        <mapping resource="SolicitacaoRecarga.hbm.xml"/>
+        <mapping resource="TipoEquipamento.hbm.xml"/>
+        <mapping resource="Usuario.hbm.xml"/>
+        <mapping resource="VersaoAtual.hbm.xml"/>
+        <mapping resource="VersaoUsuario.hbm.xml"/-->
+
+        <!-- amsdhfaois -->
+    </session-factory>
+</hibernate-configuration>

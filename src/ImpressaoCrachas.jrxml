@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ImpressaoCrachas" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f429aac2-8171-486e-9665-54dbe5368924">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="904"/>
+	<property name="ireport.y" value="1161"/>
+	<parameter name="codigoCrachas" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select * from crachas where codigocrachas = $P{codigoCrachas}]]>
+	</queryString>
+	<field name="codigocrachas" class="java.lang.Integer"/>
+	<field name="cargocracha1" class="java.lang.String"/>
+	<field name="cargocracha2" class="java.lang.String"/>
+	<field name="cargocracha3" class="java.lang.String"/>
+	<field name="cargocracha4" class="java.lang.String"/>
+	<field name="datacracha" class="java.sql.Date"/>
+	<field name="departamentocracha1" class="java.lang.String"/>
+	<field name="departamentocracha2" class="java.lang.String"/>
+	<field name="departamentocracha3" class="java.lang.String"/>
+	<field name="departamentocracha4" class="java.lang.String"/>
+	<field name="impresso" class="java.lang.Boolean"/>
+	<field name="nomecracha1" class="java.lang.String"/>
+	<field name="nomecracha2" class="java.lang.String"/>
+	<field name="nomecracha3" class="java.lang.String"/>
+	<field name="nomecracha4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="13" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="527" splitType="Stretch">
+			<image>
+				<reportElement x="98" y="45" width="311" height="214" uuid="6738fec6-2218-4440-8860-fc12d322fd55">
+					<printWhenExpression><![CDATA[!$F{nomecracha1}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA["C:\\SURGI\\imagens\\ModeloCracha.gif"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="409" y="45" width="311" height="214" uuid="7c2f6f34-0749-4186-a2be-d84bc6c7b97e">
+					<printWhenExpression><![CDATA[!$F{nomecracha2}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA["C:\\SURGI\\imagens\\ModeloCracha.gif"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="98" y="259" width="311" height="214" uuid="8f125155-8944-4d9f-a830-e8fce5e15725">
+					<printWhenExpression><![CDATA[!$F{nomecracha3}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA["C:\\SURGI\\imagens\\ModeloCracha.gif"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="409" y="259" width="311" height="214" uuid="a1b98fa2-cc24-46fc-a1d2-67f024a04863">
+					<printWhenExpression><![CDATA[!$F{nomecracha4}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA["C:\\SURGI\\imagens\\ModeloCracha.gif"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="98" y="181" width="156" height="23" forecolor="#FFFFFF" uuid="4da6c652-3cce-422f-8ce3-62a088092607"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="181" width="155" height="23" forecolor="#FFFFFF" uuid="f806cfd0-caa7-40db-8a3a-c9d486768d93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="212" width="156" height="15" forecolor="#FFFFFF" uuid="c7b3f65b-0a8c-488a-a6a6-6aaaeccd9e7c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="230" width="156" height="15" forecolor="#FFFFFF" uuid="646e76bd-b09c-4503-aac6-2a01e31ecf0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="212" width="156" height="15" forecolor="#FFFFFF" uuid="d16b01ac-3086-451e-8459-45a8666ea880"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="230" width="156" height="15" forecolor="#FFFFFF" uuid="fb3c4b53-bd32-43a8-a120-1c59a33857f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="181" width="156" height="23" forecolor="#FFFFFF" uuid="480a5589-ee1c-44eb-a10a-627ac79a80d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="181" width="156" height="23" forecolor="#FFFFFF" uuid="1ed7e11c-0fd5-4f10-b3cb-9218a55882c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="212" width="156" height="15" forecolor="#FFFFFF" uuid="cd1936be-cb8b-471e-95cd-0f239cfc0086"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="212" width="156" height="15" forecolor="#FFFFFF" uuid="0bd696fa-8390-48a3-a30b-4dfd64f8a816"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="230" width="156" height="15" forecolor="#FFFFFF" uuid="4758acd6-524a-4333-9581-8a888e569329"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="230" width="156" height="15" forecolor="#FFFFFF" uuid="8001a685-f898-4d3f-a483-4dae005928eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="396" width="156" height="23" forecolor="#FFFFFF" uuid="a595fb20-a53a-43dc-9d7b-0c09ed721e41"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="396" width="156" height="23" forecolor="#FFFFFF" uuid="e726e6e3-0f42-4491-941f-24014018e300"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="427" width="156" height="15" forecolor="#FFFFFF" uuid="b4f5c93e-3fcc-4959-a7a4-d9c7f4211b27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="427" width="156" height="15" forecolor="#FFFFFF" uuid="b2098108-937f-4e7c-8f25-8c2cc65fa5bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="446" width="156" height="15" forecolor="#FFFFFF" uuid="c3499806-c266-4ede-9de1-8ff68c0c26b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="446" width="156" height="15" forecolor="#FFFFFF" uuid="47c13a9e-f260-49c3-a755-8f8f0b263f5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="396" width="156" height="23" forecolor="#FFFFFF" uuid="7db7ceee-b51f-4fb2-81d1-a5c076d10a7e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="396" width="156" height="23" forecolor="#FFFFFF" uuid="1f55b8f0-b1c3-4607-acf8-faeee5f11071"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomecracha4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="427" width="156" height="15" forecolor="#FFFFFF" uuid="8af805a5-5457-45b8-94fd-b1e3af610806"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="427" width="156" height="15" forecolor="#FFFFFF" uuid="f18a47b9-0961-443b-a7d6-eced2d54804d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargocracha4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="446" width="156" height="15" forecolor="#FFFFFF" uuid="20e35354-9d6e-4801-8610-c0a83b91a2c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="446" width="156" height="15" forecolor="#FFFFFF" uuid="5b118780-ae1b-4484-95b9-1101e7b250c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentocracha4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="15" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

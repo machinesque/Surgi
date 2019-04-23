@@ -1,0 +1,34 @@
+Primeiro, vamos criar um library para o JCalendar.
+
+1 - Tools -> Library Manager
+2 - New Library
+3 - Escolhe um nome, JCalendar por exemplo e escolhe o tipo, deixe Class Libraries mesmo.
+4 - Dê ok
+5 - Sua lib vai ser criada, agora vc precisa adicionar os .jar dela.
+6 - Com ela selecionada, vá a direita, na aba ClassPaths e clique em add jar/folder
+7 - No caso da JCalendar vai ser jcalendar-xxx.jar e looks-xxx.jar
+8 - elas vão ser adicionadas na lista Library Classpaths
+9 - Se vc quiser adicionar o fonte e os docs é só ir nas abas correspondentes, feito isso, clique em OK e o library manager vai fechar
+
+Agora configurando a paleta...
+1 - Tools -> Pallete Manager -> Swing/AWT Components
+2 - Clique no nó palete ( o nó raiz da árvore)
+3 - Clique em New Category
+4 - Dê um nome a sua categoria, JCalendar por exemplo.
+5 - Clique na categoria criada.
+6 - Com ela selecionada, clique em Add From Library (vamos usar a lib que acabamos de criar)
+7 - Procute o nome da lib q vc criou no comeco do tópico, o nome era JCalendar, clique em Next
+8 - Ele vai fazer uma busca pelos componentes, deixe o rádio Show Marked JavaBeans marcado.
+9 - Clique no primeiro componente, e segurando shift clique no último, a lista interia sera selecionada, clique em Next
+10 - Escolha a categoria q vc quer q eles sejam adicionados e clique em Finish
+11 - O pallete manager vai aparecer, se vc expandir o nó da paleta q vc criou vc vau ver os componetes lá.
+12 - Clique em close para fechar o pallete manager.
+13 - Pronto, agora seus componentes estão na paleta.
+
+O legal é q como vc criou a paleta baseada numa lib, a mesma será adicionada automaticamente no projeto se vc usar algum componente da mesma.
+
+Se tivesse usado um .jar ao invés de referenciar uma lib, o jar seria adicionado no projeto da mesma forma.
+
+Posta ai se vc conseguiu!
+
+Falow! 

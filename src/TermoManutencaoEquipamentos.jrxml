@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TermoManutencaoEquipamentos" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e5481137-1483-416d-b051-39b74269b271">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codigoUsuario" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select * from usuario where codigousuario = $P{codigoUsuario}]]>
+	</queryString>
+	<field name="codigousuario" class="java.lang.Integer"/>
+	<field name="nomeusuario" class="java.lang.String"/>
+	<field name="matricula" class="java.lang.String"/>
+	<field name="senha" class="java.lang.String"/>
+	<field name="contrasenha" class="java.lang.String"/>
+	<field name="celular" class="java.lang.String"/>
+	<field name="temaescolhido" class="java.lang.String"/>
+	<field name="usuarioinativo" class="java.lang.Boolean"/>
+	<field name="emailusuario" class="java.lang.String"/>
+	<field name="departamentodivisaosetor_codigodepartamentodivisaosetor" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="-19" y="0" width="592" height="802" uuid="d177d668-5b67-4a37-8145-1e136ab93ef0"/>
+				<imageExpression><![CDATA["C:\\SURGI\\imagens\\TermomanutencaoEquipamentos[1024x768].jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
